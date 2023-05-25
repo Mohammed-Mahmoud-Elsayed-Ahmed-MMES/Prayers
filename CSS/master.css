@@ -1,0 +1,111 @@
+:root {
+    --c-active: #f51659;
+    --c-active-inner: #FFFFFF;
+    --c-default: #D2D6E9;
+    --c-default-dark: #C7CBDF;
+    --c-black: #1B1B22;
+    --transparent-color: rgb(15 116 143 / 70%);
+    --animate-duration: 1s;
+    --animate-delay: 0.9s;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Caveat', cursive;
+    text-align: center;
+    background-image: linear-gradient(
+        to bottom  right ,
+        #4affde 0%, #5b9dff 40%, #d06bff 60%, #ff34d2 100%
+    );
+    background-size: 200% 200%;
+    animation: movingGradient 5s linear infinite alternate;
+}
+@keyframes movingGradient {
+    from { background-position: 0 0; }
+    to { background-position: 100% 100%; }
+}
+h2 {
+    font-size: xxx-large;
+}
+p {
+    font-size: x-large;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+/* End Global Rules */
+.container {
+    /* position: absolute;
+    top: 50%;
+    left: 50%; */
+    width: 100%;      /* to enable (from top to trasform) i canceled .shadow-pop-br properities */
+    /* padding: 40px;
+    transform: translate(-50%,-50%);
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    border-radius: 10px; */
+    /* background-image: url("../Images/lights.png");
+    background-size: cover; */
+}
+
+@keyframes movingGradient {
+    0% { background-position: 0 0; }
+    100% { background-position: 100% 100%; }
+}
+/* @media (max-width: 767px) {
+    .container {
+        display: block;
+        height: 186%;
+        margin-top: 534px;
+        padding: 40px 5px 0;
+    }
+} */
+span {
+    display: inline-block;
+    position: relative;
+    border-bottom: 2px solid #000000;
+    width: 50%;
+    top: -13px;
+}
+
+/* Start Box */
+.box {
+    position: relative;
+    background-color: white;
+    top: 10%;
+    left: 5%;
+    width: 90%;
+    margin-top: 25px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px ;
+    /* background: rgba(0,0,0,.5); */
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+/* .two {
+    position: relative;
+    top: 74%;
+    left: 5%;
+    width: 90%;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+} */
+.four {
+    margin-bottom: 10px;
+}
+/* End Box */
